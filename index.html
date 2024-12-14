@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionFind - Product Filter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Arial:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="filter-container">
+    <div class="filter">
+      <label for="size">Size</label>
+      <select id="size" class="filter-select">
+        <option value="">All Sizes</option>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+      </select>
+    </div>
+
+    <div class="filter">
+      <label for="color">Color</label>
+      <select id="color" class="filter-select">
+        <option value="">All Colors</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="black">Black</option>
+      </select>
+    </div>
+
+    <div class="filter">
+      <label for="price">Price Range</label>
+      <select id="price" class="filter-select">
+        <option value="">All Prices</option>
+        <option value="0-50">Under $50</option>
+        <option value="51-100">$51 - $100</option>
+        <option value="101-200">$101 - $200</option>
+        <option value="200+">Over $200</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="product-grid" id="product-grid">
+    <!-- Product cards will be dynamically inserted here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
